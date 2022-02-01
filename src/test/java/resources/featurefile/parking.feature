@@ -10,7 +10,7 @@ Feature: Parking Functionality
     And User enters the valid exit date "<exit date>"
     And User enters the valid exit time "<exit time>"
     And User clicks on the calculate button
-    Then Verifies the estimated parking cost for one day parking "<parking option>" "<parking cost>"
+    Then Verifies the estimated parking cost for one day parking "<parking cost>"
 
     Examples:
       | parking option            | entry date | entry time | exit date  | exit time | parking cost |

@@ -42,11 +42,11 @@ public class ParkingSteps {
         new ParkingCostPage().doClickOnCalculateButton();
     }
 
-    @Then("^Verifies the estimated parking cost for one day parking \"([^\"]*)\" \"([^\"]*)\"$")
-    public void verifiesTheEstimatedParkingCostForOneDayParking(String parkingType, String parkingCost)  {
-        new ParkingCostPage().verifyParkingCharges(parkingType, parkingCost);
+    @Then("^Verifies the estimated parking cost for one day parking \"([^\"]*)\"$")
+    public void verifiesTheEstimatedParkingCostForOneDayParking(String parkingCharges) {
+        new ParkingCostPage().verifyParkingCharges(parkingCharges);
     }
-
-
-
 }
+
+
+

@@ -73,21 +73,8 @@ public class ParkingCostPage extends Utility {
         doClickOnElement(calculateButton);
     }
 
-    public void verifyParkingCharges(String parkingLot, String parkingCharges) {
-        if (parkingLot.equalsIgnoreCase("Valet Parking")) {
-            Assert.assertTrue(estimatedParkingCost.getText().contains(parkingCharges));
-        } else if (parkingLot.equalsIgnoreCase("Short-Term Parking")) {
-            Assert.assertTrue(estimatedParkingCost.getText().contains(parkingCharges));
-        } else if (parkingLot.equalsIgnoreCase("Economy Parking")) {
-            Assert.assertTrue(estimatedParkingCost.getText().contains(parkingCharges));
-        }else if (parkingLot.equalsIgnoreCase("Long-Term Garage Parking")) {
-            Assert.assertTrue(estimatedParkingCost.getText().contains(parkingCharges));
-        }else if (parkingLot.equalsIgnoreCase("Long-Term Surface Parking")) {
-            Assert.assertTrue(estimatedParkingCost.getText().contains(parkingCharges));
-        }else {
-            System.out.println("Invalid Parking Selection");
-        }
-
+    public void verifyParkingCharges(String parkingCharges) {
+        Assert.assertTrue(estimatedParkingCost.getText().contains(parkingCharges));
     }
 
 
